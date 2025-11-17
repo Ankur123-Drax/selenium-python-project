@@ -12,7 +12,7 @@ def pytest_addoption(parser):
 @pytest.fixture
 def driver(request):
     browser = request.config.getoption("--browser")
-    driver = get_driver()
+    driver = get_driver(browser)
     yield driver
     driver.quit()
 
