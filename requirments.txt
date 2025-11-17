@@ -1,0 +1,4 @@
+required library -
+selenium
+pytest
+webdriver-manager
